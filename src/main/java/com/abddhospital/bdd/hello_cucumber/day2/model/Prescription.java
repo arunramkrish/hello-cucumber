@@ -55,5 +55,43 @@ public class Prescription {
 	public void setDose(String dose) {
 		this.dose = dose;
 	}
+
+	@Override
+	public int hashCode() {
+		final int prime = 31;
+		int result = 1;
+		result = prime * result + ((caseNumber == null) ? 0 : caseNumber.hashCode());
+		result = prime * result + ((drugName == null) ? 0 : drugName.hashCode());
+		result = prime * result + ((patientId == null) ? 0 : patientId.hashCode());
+		return result;
+	}
+
+	@Override
+	public boolean equals(Object obj) {
+		if (this == obj)
+			return true;
+		if (obj == null)
+			return false;
+		if (getClass() != obj.getClass())
+			return false;
+		Prescription other = (Prescription) obj;
+		if (caseNumber == null) {
+			if (other.caseNumber != null)
+				return false;
+		} else if (!caseNumber.equals(other.caseNumber))
+			return false;
+		if (drugName == null) {
+			if (other.drugName != null)
+				return false;
+		} else if (!drugName.equals(other.drugName))
+			return false;
+		if (patientId == null) {
+			if (other.patientId != null)
+				return false;
+		} else if (!patientId.equals(other.patientId))
+			return false;
+		return true;
+	}
+	
 	
 }
