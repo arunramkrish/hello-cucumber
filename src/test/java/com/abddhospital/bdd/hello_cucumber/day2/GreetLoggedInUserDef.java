@@ -2,8 +2,6 @@ package com.abddhospital.bdd.hello_cucumber.day2;
 
 import static org.junit.Assert.assertEquals;
 
-import java.util.List;
-
 import com.abddhospital.bdd.hello_cucumber.day2.model.User;
 
 import io.cucumber.datatable.DataTable;

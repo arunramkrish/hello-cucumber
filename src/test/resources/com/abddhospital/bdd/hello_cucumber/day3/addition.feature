@@ -1,4 +1,4 @@
-@wip
+@day3
 Feature: Addition
 
   # Inputs are supplied as examples, there are 2 examples '10 + 20 = 30', '50 + 60 = 110'
